@@ -38,7 +38,8 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    find_by_name
+    s = Song.find_by_name(name)
+    s
   end
 
 
