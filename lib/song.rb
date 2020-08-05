@@ -34,13 +34,13 @@ class Song
         return song
       end
     end
-    return false
+    return nil
   end
 
   def self.find_or_create_by_name(name)
     s = Song.find_by_name(name)
     unless s
-      s = Song.create_by_name(name) 
+      s = Song.create_by_name(name)
     end
     s
   end
