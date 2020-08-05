@@ -53,6 +53,7 @@ class Song
     artist, name = file.split(" - ")
     s = Song.new
     s.name = name.slice(0...-4)
+    s.artist_name = artist
   end
 
 end
